@@ -69,6 +69,11 @@ body {
   color: #343a40;
   text-align: left;
   background-color: #fff;
+  padding-top: 56px;
+}
+
+.fixed-top {
+    z-index: -1;
 }
 
 [tabindex="-1"]:focus {
