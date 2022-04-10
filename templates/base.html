@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -10,7 +9,7 @@
 
 <title>GreatKart | One of the Biggest Online Shopping Platform</title>
 
-<link href="{% static 'images/icon.png' %}" rel="shortcut icon" type="image/x-icon">
+<link href="{% static 'images/favicon.ico' %}" rel="shortcut icon" type="image/x-icon">
 
 <!-- jQuery -->
 <script src="{% static 'js/jquery-2.0.0.min.js' %}" type="text/javascript"></script>
@@ -26,8 +25,17 @@
 <link href="{% static 'css/ui.css' %}" rel="stylesheet" type="text/css"/>
 <link href="{% static 'css/responsive.css' %}" rel="stylesheet" media="only screen and (max-width: 1200px)" />
 
+<link href="{% static 'css/custom.css' %}" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!-- custom javascript -->
 <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}" type="text/javascript"></script>
+
+
+<!-- PayPal Script -->
+<script src="https://www.paypal.com/sdk/js?client-id=AU20VfqjZO4E1wnwWztTs-RMbiJjrz7da9DQwpawI0UX4eUmY2ZIreavkuWAY3fVQTuFQc07ss-i9DiK&currency=USD"></script>
 
 <script type="text/javascript">
 /// some script
@@ -36,20 +44,20 @@
 $(document).ready(function() {
 	// jQuery code
 
-}); 
+});
 // jquery end
 </script>
 
 </head>
 <body>
 
-<!-- navbar.// -->
-{% include 'includes/navbar.html' %}
+  <!-- navbar -->
+  {% include 'includes/navbar.html' %}
 
-{% block content %}
-<!-- content.// -->
+  {% block content %}
+  <!-- content -->
+  {% endblock %}
 
-{% endblock %}
 
-<!-- footer.// -->
+<!-- footer -->
 {% include 'includes/footer.html' %}

@@ -1,5 +1,6 @@
 <!-- ========================= FOOTER ========================= -->
-<footer class="section-footer border-top">
+<footer class="section-footer border-top" style="background-color: rgb(35, 47, 59);
+  color: #fff;">
 	<div class="container">
 		<section class="footer-bottom border-top row">
 			<div class="col-md-2">
@@ -19,3 +20,15 @@
 	</div><!-- //container -->
 </footer>
 <!-- ========================= FOOTER END // ========================= -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.thumb a').click(function(e){
+			e.preventDefault();
+			$('.mainImage img').attr('src', $(this).attr("href"));
+		})
+	})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+web: gunicorn PyTech.wsgi

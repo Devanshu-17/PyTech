@@ -1,38 +1,194 @@
 
+
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-{% load static %}
+
+
 <!-- ========================= SECTION MAIN ========================= -->
-<section class="section-intro padding-y-sm">
-<div class="container">
-
-<div class="intro-banner-wrap">
-	<img src="{% static 'images/banners/cover.jpg' %}" class="img-fluid rounded">
-</div>
-
-</div> <!-- container //  -->
-</section>
+<section class="home" id="home" style="position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1b1b;
+  background-size: cover;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 5px solid #333;
+  filter: opacity(80%);
+  filter: contrast(80%);
+  z-index: 100;">
+		<video autoplay muted loop id="myVideo" style="position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;">
+			<source src="{% static './images/product_page.jpg' %}">
+		</video>
+		<div class="content" style="max-width: 900px;
+  text-align: center;
+  background-blend-mode: color-burn #111;
+  z-index: 100;">
+			<h2 style="font-size: 5em;
+  color: #fff;
+  text-shadow: 0 0 2px #e7315a, 0 0 5px #333;">Always Choose Quality</h2>
+			<p style="font-size: 1em;
+  color: #fff;
+  text-shadow: 0 0 2px #e7315a, 0 0 5px #333;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque asperiores consequuntur modi, facere quos
+			</p>
+			<a href="./store.html" class="btn" style="font-size: 1em;
+  background-color: rgb(39, 5, 36);
+  color: #e7315a;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  box-shadow: 0 0 2px #e7315a, 0 0 5px #333;">STORE</a>
+		</div>
+	</section>
 <!-- ========================= SECTION MAIN END// ========================= -->
-
+<section class="about" id="about" style=" border-bottom: 5px solid #333;
+  padding: 120px;
+  background-color: rgb(35, 47, 59);">
+		<div class="row" style="position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 120px;">
+			<div class="col1" style="position: relative;
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;">
+				<h2 class="titleText" style="color: #fff;
+  font-size: 2em;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;">About <span style="color: #e7315a;
+  font-weight: 700;
+  font-size: 1.5em; ">Py</span>Tech</h2>
+				<p style="color: #fff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore culpa sapiente neque optio
+					tempore! Magnam ut ad laudantium molestiae odit, nulla dolore voluptate quaerat, similique eaque
+					repudiandae laborum, corrupti harum quasi voluptas nostrum?lorem12lorem12
+				</p>
+			</div>
+			<div class="col2" style=" position: relative;
+  width: 50%;
+  min-height: 300px;">
+				<div class="imgBx">
+					<img src="product page.jpg" style="position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 10px 10px 105px 0px rgba(105, 104, 104, 0.5);">
+				</div>
+			</div>
+		</div>
+		<div class="row" style="position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 120px;">
+			<div class="col2" style=" position: relative;
+  width: 50%;
+  min-height: 300px;">
+				<div class="imgBx">
+					<img src="product page.jpg" style="position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 10px 10px 105px 0px rgba(105, 104, 104, 0.5);">
+				</div>
+			</div>
+			<div class="col1" style="position: relative;
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;">
+				<h2 class="titleText" style="color: #fff;
+  "><span style="color: #e7315a;
+  font-weight: 700;
+  font-size: 1.5em;">Game</span> Apps</h2>
+				<p style="color: #fff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore culpa sapiente neque optio
+					tempore! Magnam ut ad laudantium molestiae odit, nulla dolore voluptate quaerat, similique eaque
+					repudiandae laborum, corrupti harum quasi voluptas nostrum?lorem12lorem12
+				</p>
+			</div>
+		</div>
+		<div class="row" style="position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 120px;">
+			<div class="col1" style="position: relative;
+  width: 48%;
+  display: flex;
+  flex-wrap: wrap;">
+				<h2 class="titleText" style="color: #fff;
+  "><span style="color: #e7315a;
+  font-weight: 700;
+  font-size: 1.5em;">E</span>Books and more</h2>
+				<p style="color: #fff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolore culpa sapiente neque optio
+					tempore! Magnam ut ad laudantium molestiae odit, nulla dolore voluptate quaerat, similique eaque
+					repudiandae laborum, corrupti harum quasi voluptas nostrum?lorem12lorem12
+				</p>
+			</div>
+			<div class="col2" style=" position: relative;
+  width: 50%;
+  min-height: 300px;">
+				<div class="imgBx">
+					<img src="product page.jpg" style="position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 10px 10px 105px 0px rgba(105, 104, 104, 0.5);">
+				</div>
+			</div>
+		</div>
+	</section>
 <!-- ========================= SECTION  ========================= -->
-<section class="section-name padding-y-sm">
+<section class="section-name padding-y-sm" style="background-color: #0d161f;
+  padding-top: 100px;">
 <div class="container">
 
-<header class="section-heading">
-	<a href="{% url 'store' %}" class="btn btn-outline-primary float-right">See all</a>
-	<h3 class="section-title">Popular products</h3>
+<header class="section-heading" style="padding-top: 30px;">
+	<a href="{% url 'store' %}" class="btn btn-outline-primary float-right" style="padding: 30px;
+    color: #fff;">See all</a>
+	<h3 class="section-title" style="padding: 30px;
+    color: #fff;">Popular products</h3>
 </header><!-- sect-heading -->
 
-	
+
 <div class="row">
 	{% for product in products %}
 	<div class="col-md-3">
-		<div class="card card-product-grid">
+		<div class="card card-product-grid" style="border-radius: 20px;
+    box-shadow: 10px 10px 105px 0px rgba(46, 27, 27, 0.5);overflow:hidden;">
 			<a href="{{ product.get_url }}" class="img-wrap"> <img src="{{ product.images.url }}"> </a>
 			<figcaption class="info-wrap">
 				<a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a>
-				<div class="price mt-1">$ {{ product.price }} </div> <!-- price-wrap.// -->
+				<div class="price mt-1">$ {{ product.price }}</div> <!-- price-wrap.// -->
+				<div class="rating-star">
+					<span>
+						<i class="fa fa-star{% if product.averageReview < 0.5 %}-o{% elif product.averageReview >= 0.5 and product.averageReview < 1 %}-half-o {% endif %}" aria-hidden="true"></i>
+						<i class="fa fa-star{% if product.averageReview < 1.5 %}-o{% elif product.averageReview >= 1.5 and product.averageReview < 2 %}-half-o {% endif %}" aria-hidden="true"></i>
+						<i class="fa fa-star{% if product.averageReview < 2.5 %}-o{% elif product.averageReview >= 2.5 and product.averageReview < 3 %}-half-o {% endif %}" aria-hidden="true"></i>
+						<i class="fa fa-star{% if product.averageReview < 3.5 %}-o{% elif product.averageReview >= 3.5 and product.averageReview < 4 %}-half-o {% endif %}" aria-hidden="true"></i>
+						<i class="fa fa-star{% if product.averageReview < 4.5 %}-o{% elif product.averageReview >= 4.5 and product.averageReview < 5 %}-half-o {% endif %}" aria-hidden="true"></i>
+						</span>
+				</div>
 			</figcaption>
 		</div>
 	</div> <!-- col.// -->
